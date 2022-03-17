@@ -57,9 +57,13 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-
-}
+function getLast(array) {
+  let answer = array[array.length--]
+  return answer
+} // end getLast
+console.log('Function getLast should return bronze =>', getLast(['platinum', 'gold', 'silver', 'bronze']));
+console.log('Function getLast should return undefined =>', getLast());
+//THIS ALSO ISN:T WORKING BUT IM GONNA TAKE ANOTHER BREAK AND WORK ON OTHER PROBLEMS AND COME BACK BECAUSE I KNOW IM DOING SOMETHING SIMPLE WRONG
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
