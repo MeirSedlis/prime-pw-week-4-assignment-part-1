@@ -45,8 +45,8 @@ console.log('running multiplyThree with 2, 3, and 5, should return 30 =>', multi
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
-  }
-    else return false;
+  } else 
+  return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -65,8 +65,14 @@ function getLast( array ) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
-}
+  for(let i=0; i<array.length; i++){
+    if(//the value is found){
+      return true
+    } else
+    return false
+    
+  }
+} // end find
 
 // ----------------------
 // Stretch Goals
