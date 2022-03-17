@@ -18,12 +18,18 @@ function helloName(name) {
   return `Hello ${name}!`;
 }
 // Remember to call the function to test
-console.log('Test - should say "Hello Meir!"', helloName('Meir'));
+helloName('Meir');
+console.log('Test - should say "Hello Meir!"', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers(firstNumber, secondNumber) {
+  console.log('in addNumbers:', firstNumber, secondNumber)
+  let answer = firstNumber + secondNumber;
+  return answer;
   // return firstNumber + secondNumber;
-}
+} // end addNumbers
+console.log('running addNumbers with 5 & 8, should return 13 =>', addNumbers(5,8));
+
 
 
 // 4. Function to multiply three numbers & return the result
