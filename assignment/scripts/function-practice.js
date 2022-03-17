@@ -66,13 +66,17 @@ function getLast( array ) {
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   for(let i=0; i<array.length; i++){
-    if(//the value is found){
+    if(array === value){
       return true
     } else
     return false
-    
   }
 } // end find
+console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
+console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
+console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
+console.log('find - should say true', find('your card', ['A', 'Q', 'J', 'your card']))
+//THIS STILL ISN:T WORKING!!! ASK SOMEONE FOR HELP BUT IT'S TIME FOR A BREAK RIGHT NOW
 
 // ----------------------
 // Stretch Goals
