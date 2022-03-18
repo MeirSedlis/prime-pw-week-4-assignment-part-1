@@ -57,9 +57,9 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let cards = ['A', 'Q', 'J', 'your card']
-let people
-let nothing
+let cards = [ 'A', 'K', 'Q', 'J'];
+let people = ['meir', 'jake', 'joe', 'chad', 'liz'];
+let nothing = [];
 
 // INPUT: array
 // OUTPUT: value of LAST item in some array
@@ -73,16 +73,18 @@ function getLast(things) {
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  for(let i=0; i<array.length; i++){
-    if(array[i] === value){
-      return true
-    } else
-    return false
+function find( thingToFind, toSearch ){
+  for(let i=0; i<toSearch.length; i++){
+    if(toSearch[i] === thingToFind){
+      return true;
+    } 
   }
+  return false;
 } // end find
 
-console.log('find - should say true', find('your card', ['A', 'Q', 'J', 'your card']))
+console.log('find - should say true', find('A', cards ));
+console.log('find - should say true', find('joe', people ));
+console.log('find - should say false', find('A', nothing ));
 
 // ----------------------
 // Stretch Goals
