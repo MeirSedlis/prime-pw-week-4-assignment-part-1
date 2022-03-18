@@ -18,8 +18,7 @@ function helloName(name) {
   return `Hello ${name}!`;
 }
 // Remember to call the function to test
-helloName('Meir');
-console.log('Test - should say "Hello Meir!"', helloName());
+console.log('Test - should say "Hello Meir!"', helloName('Meir'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -66,8 +65,11 @@ let nothing = [];
 function getLast(things) {
   return things[things.length -1]
     }
-
  // end getLast
+ 
+ console.log('getLast - should return J =>', getLast(cards));
+ console.log('getLast - should return liz =>', getLast(people));
+ console.log('getLast - should return undefined =>', getLast(nothing));
 
 
 // 7. Function to find a value in an array. Return true if the 
