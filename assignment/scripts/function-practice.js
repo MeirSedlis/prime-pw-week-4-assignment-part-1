@@ -57,30 +57,32 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast(array) {
-  let answer = array[array.length--]
-  return answer
-} // end getLast
-console.log('Function getLast should return bronze =>', getLast(['platinum', 'gold', 'silver', 'bronze']));
-console.log('Function getLast should return undefined =>', getLast());
-//THIS ALSO ISN:T WORKING BUT IM GONNA TAKE ANOTHER BREAK AND WORK ON OTHER PROBLEMS AND COME BACK BECAUSE I KNOW IM DOING SOMETHING SIMPLE WRONG
+let cards = ['A', 'Q', 'J', 'your card']
+let people
+let nothing
+
+// INPUT: array
+// OUTPUT: value of LAST item in some array
+function getLast(things) {
+  return things[things.length -1]
+    }
+
+ // end getLast
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   for(let i=0; i<array.length; i++){
-    if(array === value){
+    if(array[i] === value){
       return true
     } else
     return false
   }
 } // end find
-console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
-console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
-console.log('find - should say false', find('your card', ['A', 'Q', 'J', 'your card']))
+
 console.log('find - should say true', find('your card', ['A', 'Q', 'J', 'your card']))
-//THIS STILL ISN:T WORKING!!! ASK SOMEONE FOR HELP BUT IT'S TIME FOR A BREAK RIGHT NOW
 
 // ----------------------
 // Stretch Goals
